@@ -1,5 +1,5 @@
 [build]
-  publish = "/opt/build/repo/journal_images"
+  publish = "journal_images"
   command = "npm install && npm run build"  # Install dependencies before build
 
 
