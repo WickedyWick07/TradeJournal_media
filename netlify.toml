@@ -1,0 +1,9 @@
+[build]
+  publish = "media"  # Path to the folder where media files are stored
+
+  
+[[redirects]]
+  from = "/media/journal_images/*"
+  to = "/media/journal_images/:splat"
+  status = 200
+  force = true
