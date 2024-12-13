@@ -1,6 +1,7 @@
 [build]
+  command = "cd netlify/functions && npm install && npm run build"
   publish = "media"
-  command = "npm install && npm run build"  # Install dependencies before build
+
 
 
 
