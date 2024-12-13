@@ -3,7 +3,10 @@
   command = "npm install && npm run build"  # Install dependencies before build
 
 
+[functions]
+  directory = "netlify/functions"  # Path to your function folder
 
+  
 [[redirects]]
   from = "/media/journal_images/*"
   to = "/media/journal_images/:splat"
