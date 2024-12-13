@@ -1,7 +1,9 @@
 [build]
-  publish = "media"  # Path to the folder where media files are stored
+  publish = "media"
+  command = "npm install && npm run build"  # Install dependencies before build
 
-  
+
+
 [[redirects]]
   from = "/media/journal_images/*"
   to = "/media/journal_images/:splat"
