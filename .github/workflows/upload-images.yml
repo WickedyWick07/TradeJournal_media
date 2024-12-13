@@ -1,0 +1,27 @@
+name: Upload Journal Images to Repository
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'journal_images/**'
+
+jobs:
+  upload_images:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Configure Git
+      run: |
+        git config --global user.email "nhlamulosmashaba@gmail.com"
+        git config --global user.name "GitHub Actions"
+
+    - name: Commit and Push New Images
+      run: |
+        git add journal_images/
+        git commit -m "Update journal images"
+        git push origin master
